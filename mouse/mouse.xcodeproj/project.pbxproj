@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F1B6E131BFC5E850040B1AF /* WSexceple.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1B6E121BFC5E850040B1AF /* WSexceple.m */; };
+		2F1B6E161BFC60E60040B1AF /* WSCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1B6E151BFC60E60040B1AF /* WSCell.m */; };
+		2F1B6E181BFC60F90040B1AF /* WSCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F1B6E171BFC60F90040B1AF /* WSCell.xib */; };
 		2F3139461BFC013D0060668D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3139451BFC013D0060668D /* main.m */; };
 		2F3139491BFC013D0060668D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3139481BFC013D0060668D /* AppDelegate.m */; };
 		2F31394C1BFC013D0060668D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F31394B1BFC013D0060668D /* ViewController.m */; };
@@ -44,6 +47,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F1B6E111BFC5E850040B1AF /* WSexceple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSexceple.h; sourceTree = "<group>"; };
+		2F1B6E121BFC5E850040B1AF /* WSexceple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSexceple.m; sourceTree = "<group>"; };
+		2F1B6E141BFC60E60040B1AF /* WSCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSCell.h; sourceTree = "<group>"; };
+		2F1B6E151BFC60E60040B1AF /* WSCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSCell.m; sourceTree = "<group>"; };
+		2F1B6E171BFC60F90040B1AF /* WSCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WSCell.xib; sourceTree = "<group>"; };
 		2F3139411BFC013D0060668D /* mouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F3139451BFC013D0060668D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2F3139471BFC013D0060668D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -138,6 +146,11 @@
 				2F3139501BFC013D0060668D /* Assets.xcassets */,
 				2F3139521BFC013D0060668D /* LaunchScreen.storyboard */,
 				2F3139551BFC013D0060668D /* Info.plist */,
+				2F1B6E111BFC5E850040B1AF /* WSexceple.h */,
+				2F1B6E121BFC5E850040B1AF /* WSexceple.m */,
+				2F1B6E141BFC60E60040B1AF /* WSCell.h */,
+				2F1B6E151BFC60E60040B1AF /* WSCell.m */,
+				2F1B6E171BFC60F90040B1AF /* WSCell.xib */,
 				2F3139441BFC013D0060668D /* Supporting Files */,
 			);
 			path = mouse;
@@ -300,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F3139541BFC013D0060668D /* LaunchScreen.storyboard in Resources */,
+				2F1B6E181BFC60F90040B1AF /* WSCell.xib in Resources */,
 				2F3139511BFC013D0060668D /* Assets.xcassets in Resources */,
 				2F31394F1BFC013D0060668D /* Main.storyboard in Resources */,
 			);
@@ -335,9 +349,11 @@
 				2F31398F1BFC0E310060668D /* AFSecurityPolicy.m in Sources */,
 				2F31398D1BFC0E310060668D /* AFHTTPSessionManager.m in Sources */,
 				2F3139911BFC0E310060668D /* AFURLRequestSerialization.m in Sources */,
+				2F1B6E161BFC60E60040B1AF /* WSCell.m in Sources */,
 				2F3139931BFC0E310060668D /* AFURLSessionManager.m in Sources */,
 				2F3139491BFC013D0060668D /* AppDelegate.m in Sources */,
 				2F3139461BFC013D0060668D /* main.m in Sources */,
+				2F1B6E131BFC5E850040B1AF /* WSexceple.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,6 +579,7 @@
 				2F3139701BFC013D0060668D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2F3139711BFC013D0060668D /* Build configuration list for PBXNativeTarget "mouseTests" */ = {
 			isa = XCConfigurationList;
@@ -571,6 +588,7 @@
 				2F3139731BFC013D0060668D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2F3139741BFC013D0060668D /* Build configuration list for PBXNativeTarget "mouseUITests" */ = {
 			isa = XCConfigurationList;
@@ -579,6 +597,7 @@
 				2F3139761BFC013D0060668D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
