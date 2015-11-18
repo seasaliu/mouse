@@ -62,10 +62,10 @@
             WSexceple *exceple = [WSexceple excepleWithDictionary:dict];
             //
             [self.exceples addObject:exceple];
-            WSexceple *ex = self.exceples.lastObject;
-            NSLog(@"%@", ex.title);
+            
         }
-
+        
+        [self.tableView reloadData];
         
         
     } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {

@@ -10,8 +10,8 @@
 #import "WSexceple.h"
 @interface WSCell ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageV;
-@property (weak, nonatomic) IBOutlet UITextField *title;
-@property (weak, nonatomic) IBOutlet UITextView *decrop;
+@property (weak, nonatomic) IBOutlet UILabel *title;
+@property (weak, nonatomic) IBOutlet UILabel *decrop;
 
 @end
 
@@ -43,9 +43,11 @@
     WSCell *cell = (WSCell *)[tabelView dequeueReusableHeaderFooterViewWithIdentifier:@"seasa"];
     
     //如果缓存池中没有,那么就重新创建一个
-    cell = [[WSCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"seasa"];
-    
+    cell = [[[NSBundle mainBundle] loadNibNamed:@"WSCell" owner:nil options:nil] firstObject];
+   
     return cell;
+  
+
 }
 
 
