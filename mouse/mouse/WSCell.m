@@ -8,6 +8,8 @@
 
 #import "WSCell.h"
 #import "WSexceple.h"
+#import "UIImageView+WebCache.h"
+
 @interface WSCell ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageV;
 @property (weak, nonatomic) IBOutlet UILabel *title;
@@ -23,9 +25,12 @@
     
     //将数据模型中的数据写入成员属性中http://www.ecbaby.com//data/attachments/2015/04/15/\1429110476580568_large.jpg
     
-    self.imageV.image = [UIImage imageNamed:exceple.image];
+    
     self.title.text = exceple.title;
     self.decrop.text = exceple.descrip;
+    
+    //上面的String是一个NSURL,图片都是保存在网络上,需要将数据从网络上下载下来
+    [self.imageV sd_setImageWithURL:[NSURL URLWithString:exceple.image] placeholderImage:[UIImage imageNamed:@"17"]];
     
 }
 

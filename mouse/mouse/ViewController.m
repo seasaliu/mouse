@@ -15,6 +15,8 @@
 
 @property (nonatomic, strong) NSMutableArray *exceples;
 
+@property (nonatomic, assign) NSInteger page;
+
 @end
 
 @implementation ViewController
@@ -65,7 +67,11 @@
             
         }
         
-        [self.tableView reloadData];
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+            
+            [self.tableView reloadData];
+        }];
+        
         
         
     } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
@@ -108,4 +114,9 @@
     return cell;
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return 100;
+    
+}
 @end

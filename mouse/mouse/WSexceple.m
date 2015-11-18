@@ -18,6 +18,10 @@
     NSArray *array = dict[@"images"];
     
     exceple.image = [array.firstObject stringByAppendingString:@"_large.jpg"];
+    
+    
+
+    
     return exceple;
 }
 
